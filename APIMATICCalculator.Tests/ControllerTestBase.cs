@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using NUnit.Framework;
 using APIMATICCalculator.PCL;
 using APIMATICCalculator.Tests.Helpers;
+ 
+using APIMATICCalculator.PCL.Models;
 
 namespace APIMATICCalculator.Tests
 {
@@ -22,9 +24,6 @@ namespace APIMATICCalculator.Tests
         [SetUp]
         public void SetUp()
         {
-            // Set Configuration parameters for test execution
-            //Configuration.BaseUri = "http://api-tester.azurewebsites.net";
-
             //hooking events for catching http requests and responses
             GetClient().SharedHttpClient.OnBeforeHttpRequestEvent += httpCallBackHandler.OnBeforeHttpRequestEventHandler;
             GetClient().SharedHttpClient.OnAfterHttpResponseEvent += httpCallBackHandler.OnAfterHttpResponseEventHandler;

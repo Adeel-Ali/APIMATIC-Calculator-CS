@@ -1,4 +1,4 @@
-# Getting Started
+#Getting started
 
 ## How to Build
 
@@ -62,7 +62,7 @@ Here, you can click *Run All* to execute these test cases.
 
 ## Initialization
 
-### Initialization
+### 
 
 API client can be initialized as following.
 
@@ -84,7 +84,7 @@ APIMATICCalculatorClient client = new APIMATICCalculatorClient();
 The singleton instance of the ``` SimpleCalculatorController ``` class can be accessed from the API Client.
 
 ```csharp
-ISimpleCalculatorController simpleCalculator = client.SimpleCalculator;
+SimpleCalculatorController simpleCalculator = client.SimpleCalculator;
 ```
 
 #### <a name="get_calculate"></a>![Method: ](http://apidocs.io/img/method.png "APIMATICCalculator.PCL.Controllers.SimpleCalculatorController.GetCalculate") GetCalculate
